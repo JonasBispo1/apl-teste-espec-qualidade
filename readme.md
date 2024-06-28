@@ -1,10 +1,10 @@
 # Automação de testes para funcão basica no site ponto frio
 
 # Índice 
-* [Pré requisitos] (#Pré-requisitos)
-* [Instalação do Robot Framework] (#Instalação-do-Robot-Framework)
-* [Instalação do Playwright] (#Instalação-do-Playwright)
-* [Executando Automações] (#Executando-Automações)
+* [Pré requisitos](#Pré-requisitos)
+* [Instalação do Robot Framework](#Instalação-do-Robot-Framework)
+* [Instalação do Playwright](#Instalação-do-Playwright)
+* [Executando Automações](#Executando-Automações)
 
 # Pré requisitos
 
