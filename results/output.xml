@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20240628 00:19:44.796" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Espec Quality" source="C:\apl-teste-espec-qualidade\src\test\test_espec_quality.robot">
+<test id="s1-t1" name="Test Case: search item" line="10">
+<kw name="open the web page" library="login" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=firefox</arg>
+<arg>headless=${application.Browser.headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240628 00:19:45.997" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\apl-teste-espec-qualidade\\results\\browser\\traces\\a023a989-3647-489a-a5c0-65e6f12c468a"}</msg>
+<msg timestamp="20240628 00:19:47.637" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\apl-teste-espec-qualidade\\results\\browser\\traces\\a023a989-3647-489a-a5c0-65e6f12c468a"}</msg>
+<status status="PASS" starttime="20240628 00:19:45.997" endtime="20240628 00:19:47.637"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${application.Browser.time}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20240628 00:19:47.637" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20240628 00:19:47.637" endtime="20240628 00:19:47.637"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 1280, 'height': 720}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20240628 00:19:47.637" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg timestamp="20240628 00:19:47.697" level="INFO">Successfully created context. </msg>
+<msg timestamp="20240628 00:19:47.697" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<status status="PASS" starttime="20240628 00:19:47.637" endtime="20240628 00:19:47.697"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${application.Browser.url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240628 00:19:53.780" level="INFO">Successfully initialized new page object and opened url: https://www.pontofrio.com.br/</msg>
+<status status="PASS" starttime="20240628 00:19:47.697" endtime="20240628 00:19:53.780"/>
+</kw>
+<kw name="Validate open page" library="principal_page">
+<kw name="Get Text" library="Browser">
+<arg>xpath=//span[contains(text(),'Entre ou cadastre-se')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:19:54.579" level="INFO">Text: 'Entre ou cadastre-se'</msg>
+<status status="PASS" starttime="20240628 00:19:53.781" endtime="20240628 00:19:54.579"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:53.781" endtime="20240628 00:19:54.579"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:45.997" endtime="20240628 00:19:54.579"/>
+</kw>
+<kw name="Given wrote the product description in the search field" library="principal_page">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=input[data-testid='search-form-input']</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240628 00:19:55.003" level="INFO">Waited for Element with selector css=input[data-testid='search-form-input'] at state stable</msg>
+<status status="PASS" starttime="20240628 00:19:54.581" endtime="20240628 00:19:55.003"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${value_search}</var>
+<arg>' '</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240628 00:19:55.004" level="INFO">${value_search} = ' '</msg>
+<status status="PASS" starttime="20240628 00:19:55.004" endtime="20240628 00:19:55.004"/>
+</kw>
+<while condition="'${value_search}' != '${constants.treadmill.description_item}'">
+<iter>
+<kw name="Fill Text" library="Browser">
+<arg>id=search-form-input</arg>
+<arg>${constants.treadmill.description_item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20240628 00:19:55.006" level="INFO">Fills the text 'Panela de Pressão Clock Original Prata - 4,5L' in the given field.</msg>
+<status status="PASS" starttime="20240628 00:19:55.005" endtime="20240628 00:19:55.129"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240628 00:19:56.129" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240628 00:19:55.129" endtime="20240628 00:19:56.129"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${value_search}</var>
+<arg>id=search-form-input</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:19:56.166" level="INFO">Attribute is: 'Panela de Pressão Clock Original Prata - 4,5L'</msg>
+<msg timestamp="20240628 00:19:56.166" level="INFO">${value_search} = Panela de Pressão Clock Original Prata - 4,5L</msg>
+<status status="PASS" starttime="20240628 00:19:56.129" endtime="20240628 00:19:56.166"/>
+</kw>
+<kw name="Press Keys" library="Browser">
+<arg>id=search-form-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" starttime="20240628 00:19:56.166" endtime="20240628 00:19:56.686"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:55.004" endtime="20240628 00:19:56.686"/>
+</iter>
+<status status="PASS" starttime="20240628 00:19:55.004" endtime="20240628 00:19:56.687"/>
+</while>
+<status status="PASS" starttime="20240628 00:19:54.580" endtime="20240628 00:19:56.687"/>
+</kw>
+<kw name="When find the desired item" library="find_product">
+<kw name="Get Elements" library="Browser">
+<var>@{products}</var>
+<arg>css=div[data-testid='product-card-desktop']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20240628 00:19:56.929" level="INFO">Found locator('div[data-testid=\'product-card-desktop\']').first() Locators successfully.</msg>
+<msg timestamp="20240628 00:19:56.929" level="INFO">@{products} = [ css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0 ]</msg>
+<status status="PASS" starttime="20240628 00:19:56.689" endtime="20240628 00:19:56.929"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<var>@{products}</var>
+<arg>${products}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240628 00:19:56.931" level="INFO">${products} = ["css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0"]</msg>
+<msg timestamp="20240628 00:19:56.931" level="INFO">@{products} = [ ]</msg>
+<status status="PASS" starttime="20240628 00:19:56.930" endtime="20240628 00:19:56.931"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:56.688" endtime="20240628 00:19:56.932"/>
+</kw>
+<kw name="Then validate iten in page" library="find_product">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{products}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0</var>
+<kw name="Get Text" library="Browser">
+<var>${descricao}</var>
+<arg>${element} &gt;&gt; div.product-card__details-wrapper &gt;&gt; h3.product-card__title &gt;&gt; span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:19:57.163" level="INFO">Text: 'Panela de Pressão Clock Original Prata - 4,5L'</msg>
+<msg timestamp="20240628 00:19:57.163" level="INFO">${descricao} = Panela de Pressão Clock Original Prata - 4,5L</msg>
+<status status="PASS" starttime="20240628 00:19:56.936" endtime="20240628 00:19:57.163"/>
+</kw>
+<if>
+<branch type="IF" condition="'${descricao}' == '${constants.treadmill.description_item}'">
+<kw name="Highlight Elements" library="Browser">
+<arg>${element} &gt;&gt; div.product-card__details-wrapper &gt;&gt; h3.product-card__title &gt;&gt; span</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<msg timestamp="20240628 00:19:57.213" level="INFO">Highlighted 1 elements for 5000.</msg>
+<status status="PASS" starttime="20240628 00:19:57.165" endtime="20240628 00:19:57.213"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240628 00:19:57.389" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240628 00:19:57.213" endtime="20240628 00:19:57.389"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:57.164" endtime="20240628 00:19:57.390"/>
+</branch>
+<status status="PASS" starttime="20240628 00:19:57.164" endtime="20240628 00:19:57.390"/>
+</if>
+<status status="PASS" starttime="20240628 00:19:56.935" endtime="20240628 00:19:57.390"/>
+</iter>
+<status status="PASS" starttime="20240628 00:19:56.935" endtime="20240628 00:19:57.390"/>
+</for>
+<status status="PASS" starttime="20240628 00:19:56.934" endtime="20240628 00:19:57.391"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:45.997" endtime="20240628 00:19:57.402"/>
+</test>
+<test id="s1-t2" name="Test Case: add the iten in cst_package" line="16">
+<kw name="open the web page" library="login" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=firefox</arg>
+<arg>headless=${application.Browser.headless}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20240628 00:19:57.783" level="INFO">Switching browser to browser=82d057ed-8104-4240-a05b-f7e44dc2c233</msg>
+<msg timestamp="20240628 00:19:57.787" level="INFO">Successfully changed active browser: browser=82d057ed-8104-4240-a05b-f7e44dc2c233</msg>
+<msg timestamp="20240628 00:19:57.788" level="INFO">Reusing existing browser with id: browser=82d057ed-8104-4240-a05b-f7e44dc2c233</msg>
+<status status="PASS" starttime="20240628 00:19:57.781" endtime="20240628 00:19:57.789"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${application.Browser.time}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" starttime="20240628 00:19:57.791" endtime="20240628 00:19:57.793"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 1280, 'height': 720}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20240628 00:19:57.796" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg timestamp="20240628 00:19:57.938" level="INFO">Successfully created context. </msg>
+<msg timestamp="20240628 00:19:57.938" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<status status="PASS" starttime="20240628 00:19:57.794" endtime="20240628 00:19:57.938"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${application.Browser.url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20240628 00:20:02.094" level="INFO">Successfully initialized new page object and opened url: https://www.pontofrio.com.br/</msg>
+<status status="PASS" starttime="20240628 00:19:57.939" endtime="20240628 00:20:02.095"/>
+</kw>
+<kw name="Validate open page" library="principal_page">
+<kw name="Get Text" library="Browser">
+<arg>xpath=//span[contains(text(),'Entre ou cadastre-se')]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:04.592" level="INFO">Text: 'Entre ou cadastre-se'</msg>
+<status status="PASS" starttime="20240628 00:20:02.096" endtime="20240628 00:20:04.592"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:02.095" endtime="20240628 00:20:04.593"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:57.781" endtime="20240628 00:20:04.593"/>
+</kw>
+<kw name="Given wrote the product description in the search field" library="principal_page">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=input[data-testid='search-form-input']</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240628 00:20:05.097" level="INFO">Waited for Element with selector css=input[data-testid='search-form-input'] at state stable</msg>
+<status status="PASS" starttime="20240628 00:20:04.596" endtime="20240628 00:20:05.097"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${value_search}</var>
+<arg>' '</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240628 00:20:05.098" level="INFO">${value_search} = ' '</msg>
+<status status="PASS" starttime="20240628 00:20:05.097" endtime="20240628 00:20:05.098"/>
+</kw>
+<while condition="'${value_search}' != '${constants.treadmill.description_item}'">
+<iter>
+<kw name="Fill Text" library="Browser">
+<arg>id=search-form-input</arg>
+<arg>${constants.treadmill.description_item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:05.099" level="INFO">Fills the text 'Panela de Pressão Clock Original Prata - 4,5L' in the given field.</msg>
+<status status="PASS" starttime="20240628 00:20:05.099" endtime="20240628 00:20:05.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240628 00:20:06.218" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240628 00:20:05.216" endtime="20240628 00:20:06.218"/>
+</kw>
+<kw name="Get Attribute" library="Browser">
+<var>${value_search}</var>
+<arg>id=search-form-input</arg>
+<arg>value</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:06.262" level="INFO">Attribute is: 'Panela de Pressão Clock Original Prata - 4,5L'</msg>
+<msg timestamp="20240628 00:20:06.263" level="INFO">${value_search} = Panela de Pressão Clock Original Prata - 4,5L</msg>
+<status status="PASS" starttime="20240628 00:20:06.218" endtime="20240628 00:20:06.263"/>
+</kw>
+<kw name="Press Keys" library="Browser">
+<arg>id=search-form-input</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" starttime="20240628 00:20:06.263" endtime="20240628 00:20:06.652"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:05.098" endtime="20240628 00:20:06.652"/>
+</iter>
+<status status="PASS" starttime="20240628 00:20:05.098" endtime="20240628 00:20:06.654"/>
+</while>
+<status status="PASS" starttime="20240628 00:20:04.595" endtime="20240628 00:20:06.654"/>
+</kw>
+<kw name="When find the desired item" library="find_product">
+<kw name="Get Elements" library="Browser">
+<var>@{products}</var>
+<arg>css=div[data-testid='product-card-desktop']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20240628 00:20:06.940" level="INFO">Found locator('div[data-testid=\'product-card-desktop\']').first() Locators successfully.</msg>
+<msg timestamp="20240628 00:20:06.940" level="INFO">@{products} = [ css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0 ]</msg>
+<status status="PASS" starttime="20240628 00:20:06.660" endtime="20240628 00:20:06.940"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<var>@{products}</var>
+<arg>${products}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20240628 00:20:06.941" level="INFO">${products} = ["css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0"]</msg>
+<msg timestamp="20240628 00:20:06.941" level="INFO">@{products} = [ ]</msg>
+<status status="PASS" starttime="20240628 00:20:06.941" endtime="20240628 00:20:06.942"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:06.660" endtime="20240628 00:20:06.942"/>
+</kw>
+<kw name="And select product and insert in package" library="find_product">
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{products}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">css=div[data-testid='product-card-desktop'] &gt;&gt; nth=0</var>
+<kw name="Get Text" library="Browser">
+<var>${descricao}</var>
+<arg>${element} &gt;&gt; div.product-card__details-wrapper &gt;&gt; h3.product-card__title &gt;&gt; span</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:07.182" level="INFO">Text: 'Panela de Pressão Clock Original Prata - 4,5L'</msg>
+<msg timestamp="20240628 00:20:07.182" level="INFO">${descricao} = Panela de Pressão Clock Original Prata - 4,5L</msg>
+<status status="PASS" starttime="20240628 00:20:06.945" endtime="20240628 00:20:07.182"/>
+</kw>
+<if>
+<branch type="IF" condition="'${descricao}' == '${constants.treadmill.description_item}'">
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240628 00:20:10.184" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240628 00:20:07.184" endtime="20240628 00:20:10.184"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${element}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240628 00:20:10.184" endtime="20240628 00:20:11.071"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:07.182" endtime="20240628 00:20:11.071"/>
+</branch>
+<status status="PASS" starttime="20240628 00:20:07.182" endtime="20240628 00:20:11.071"/>
+</if>
+<status status="PASS" starttime="20240628 00:20:06.945" endtime="20240628 00:20:11.072"/>
+</iter>
+<status status="PASS" starttime="20240628 00:20:06.944" endtime="20240628 00:20:11.072"/>
+</for>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=button[data-testid='favorite-button'] &gt;&gt; svg &gt;&gt; path</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240628 00:20:15.237" level="INFO">Waited for Element with selector css=button[data-testid='favorite-button'] &gt;&gt; svg &gt;&gt; path at state visible</msg>
+<status status="PASS" starttime="20240628 00:20:11.072" endtime="20240628 00:20:15.238"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=buy-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20240628 00:20:15.238" endtime="20240628 00:20:18.487"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:06.944" endtime="20240628 00:20:18.487"/>
+</kw>
+<kw name="Then validate the item on package" library="package">
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=img[data-qa='cart-item-image']</arg>
+<arg>stable</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20240628 00:20:18.869" level="INFO">Waited for Element with selector css=img[data-qa='cart-item-image'] at state stable</msg>
+<status status="PASS" starttime="20240628 00:20:18.489" endtime="20240628 00:20:18.869"/>
+</kw>
+<kw name="validade quantity of product" library="package">
+<arg>'1'</arg>
+<kw name="Get Text" library="Browser">
+<var>${qtd}</var>
+<arg>css=select[data-qa='item-quantity'] &gt;&gt; option &gt;&gt; nth=0</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:18.906" level="INFO">Text: '1'</msg>
+<msg timestamp="20240628 00:20:18.906" level="INFO">${qtd} = 1</msg>
+<status status="PASS" starttime="20240628 00:20:18.870" endtime="20240628 00:20:18.906"/>
+</kw>
+<if>
+<branch type="IF" condition="'${qtd}' == ${quantity}">
+<kw name="Highlight Elements" library="Browser">
+<arg>css=select[data-qa='item-quantity']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<msg timestamp="20240628 00:20:18.927" level="INFO">Highlighted 1 elements for 5000.</msg>
+<status status="PASS" starttime="20240628 00:20:18.907" endtime="20240628 00:20:18.927"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:18.907" endtime="20240628 00:20:18.927"/>
+</branch>
+<status status="PASS" starttime="20240628 00:20:18.906" endtime="20240628 00:20:18.927"/>
+</if>
+<status status="PASS" starttime="20240628 00:20:18.870" endtime="20240628 00:20:18.927"/>
+</kw>
+<kw name="Get Elements" library="Browser">
+<var>${list_item}</var>
+<arg>css=li[data-testid='cart-item']</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<msg timestamp="20240628 00:20:18.949" level="INFO">Found locator('li[data-testid=\'cart-item\']').first() Locators successfully.</msg>
+<msg timestamp="20240628 00:20:18.949" level="INFO">${list_item} = ["css=li[data-testid='cart-item'] &gt;&gt; nth=0"]</msg>
+<status status="PASS" starttime="20240628 00:20:18.928" endtime="20240628 00:20:18.949"/>
+</kw>
+<for flavor="IN ENUMERATE">
+<var>${index}</var>
+<var>${element}</var>
+<value>@{list_item}</value>
+<iter>
+<var name="${index}">0</var>
+<var name="${element}">css=li[data-testid='cart-item'] &gt;&gt; nth=0</var>
+<kw name="Get Text" library="Browser">
+<var>${desc_item}</var>
+<arg>${element} &gt;&gt; div &gt;&gt; nth=1 &gt;&gt; a</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20240628 00:20:18.993" level="INFO">Text: 'Panela de Pressão Clock Original Prata - 4,5L'</msg>
+<msg timestamp="20240628 00:20:18.993" level="INFO">${desc_item} = Panela de Pressão Clock Original Prata - 4,5L</msg>
+<status status="PASS" starttime="20240628 00:20:18.951" endtime="20240628 00:20:18.993"/>
+</kw>
+<if>
+<branch type="IF" condition="'${desc_item}' == '${constants.treadmill.description_item}'">
+<kw name="Highlight Elements" library="Browser">
+<arg>${element} &gt;&gt; div &gt;&gt; nth=0</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<msg timestamp="20240628 00:20:19.014" level="INFO">Highlighted 1 elements for 5000.</msg>
+<status status="PASS" starttime="20240628 00:20:18.994" endtime="20240628 00:20:19.014"/>
+</kw>
+<kw name="Highlight Elements" library="Browser">
+<arg>${element} &gt;&gt; div &gt;&gt; nth=1</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<msg timestamp="20240628 00:20:19.038" level="INFO">Highlighted 1 elements for 5000.</msg>
+<status status="PASS" starttime="20240628 00:20:19.014" endtime="20240628 00:20:19.038"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20240628 00:20:19.161" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240628 00:20:19.039" endtime="20240628 00:20:19.161"/>
+</kw>
+<status status="PASS" starttime="20240628 00:20:18.993" endtime="20240628 00:20:19.161"/>
+</branch>
+<status status="PASS" starttime="20240628 00:20:18.993" endtime="20240628 00:20:19.161"/>
+</if>
+<status status="PASS" starttime="20240628 00:20:18.950" endtime="20240628 00:20:19.161"/>
+</iter>
+<status status="PASS" starttime="20240628 00:20:18.950" endtime="20240628 00:20:19.161"/>
+</for>
+<status status="PASS" starttime="20240628 00:20:18.488" endtime="20240628 00:20:19.161"/>
+</kw>
+<status status="PASS" starttime="20240628 00:19:57.772" endtime="20240628 00:20:19.162"/>
+</test>
+<doc>This resource contains tests to buy iten in Web Page</doc>
+<status status="PASS" starttime="20240628 00:19:44.796" endtime="20240628 00:20:20.060"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test Espec Quality">Test Espec Quality</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

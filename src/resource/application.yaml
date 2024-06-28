@@ -1,0 +1,6 @@
+application:
+  Browser:
+    browser: chromium
+    headless: false
+    time: 20 seconds
+    url: https://www.pontofrio.com.br/

@@ -1,0 +1,180 @@
+{"level":30,"time":"2024-06-28T03:19:45.938Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Listening on 56319"}
+{"level":30,"time":"2024-06-28T03:19:45.989Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:45.989Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:45.992Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:45.992Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:45.995Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-06-28T03:19:47.625Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-06-28T03:19:47.639Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-06-28T03:19:47.639Z","pid":28708,"hostname":"NOT00783MT1580","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-28T03:19:47.639Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Trace file: "}
+{"level":30,"time":"2024-06-28T03:19:47.695Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:19:47.695Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method newContext"}
+{"level":30,"time":"2024-06-28T03:19:47.703Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-06-28T03:19:47.704Z","pid":28708,"hostname":"NOT00783MT1580","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-28T03:19:49.226Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Video path: undefined"}
+{"level":30,"time":"2024-06-28T03:19:49.226Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:19:53.769Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method newPage"}
+{"level":30,"time":"2024-06-28T03:19:53.774Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:19:53.775Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(text(),'Entre ou cadastre-se')] in page."}
+{"level":30,"time":"2024-06-28T03:19:54.567Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element xpath=//span[contains(text(),'Entre ou cadastre-se')] containing Entre ou cadastre-se"}
+{"level":30,"time":"2024-06-28T03:19:54.567Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:19:54.576Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:19:54.576Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=input[data-testid='search-form-input'] in page."}
+{"level":30,"time":"2024-06-28T03:19:54.991Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:19:54.998Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-06-28T03:19:54.998Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:19:55.117Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method fillText"}
+{"level":30,"time":"2024-06-28T03:19:56.121Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-06-28T03:19:56.121Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:19:56.156Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved attribute for element id=search-form-input containing Panela de Pressão Clock Original Prata - 4,5L"}
+{"level":30,"time":"2024-06-28T03:19:56.156Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-06-28T03:19:56.158Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method press"}
+{"level":30,"time":"2024-06-28T03:19:56.159Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:19:56.674Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method press"}
+{"level":30,"time":"2024-06-28T03:19:56.682Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-06-28T03:19:56.683Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=div[data-testid='product-card-desktop'] in page."}
+{"level":30,"time":"2024-06-28T03:19:56.683Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-06-28T03:19:56.915Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Found 1 elements."}
+{"level":30,"time":"2024-06-28T03:19:56.916Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getElements"}
+{"level":30,"time":"2024-06-28T03:19:56.934Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:19:56.934Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=div[data-testid='product-card-desktop'] >> nth=0 >> div.product-card__details-wrapper >> h3.product-card__title >> span in page."}
+{"level":30,"time":"2024-06-28T03:19:57.151Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element css=div[data-testid='product-card-desktop'] >> nth=0 >> div.product-card__details-wrapper >> h3.product-card__title >> span containing Panela de Pressão Clock Original Prata - 4,5L"}
+{"level":30,"time":"2024-06-28T03:19:57.152Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:19:57.158Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:19:57.159Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=div[data-testid='product-card-desktop'] >> nth=0 >> div.product-card__details-wrapper >> h3.product-card__title >> span in page."}
+{"level":30,"time":"2024-06-28T03:19:57.185Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Locator count is 1"}
+{"level":30,"time":"2024-06-28T03:19:57.201Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:19:57.207Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-06-28T03:19:57.207Z","pid":28708,"hostname":"NOT00783MT1580","Take screenshot with options: ":{"path":"C:\\apl-teste-espec-qualidade\\results\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":20000,"omitBackground":false}}
+{"level":30,"time":"2024-06-28T03:19:57.378Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-06-28T03:19:57.401Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.435Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.438Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.449Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.454Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:19:57.454Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=990a79cc-7b0d-4e42-b9ce-834899bb60e1"}
+{"level":30,"time":"2024-06-28T03:19:57.454Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:19:57.459Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.464Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.467Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.468Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.472Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.473Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.479Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=990a79cc-7b0d-4e42-b9ce-834899bb60e1"}
+{"level":30,"time":"2024-06-28T03:19:57.479Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:19:57.485Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.694Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.697Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:19:57.697Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=990a79cc-7b0d-4e42-b9ce-834899bb60e1"}
+{"level":30,"time":"2024-06-28T03:19:57.697Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:19:57.700Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-06-28T03:19:57.714Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Removed page=1838193f-3e02-4859-b6ca-e2f480753081 from context=bd325d64-1d87-41e3-a79f-b8dc1913fd86 page stack"}
+{"level":30,"time":"2024-06-28T03:19:57.742Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-06-28T03:19:57.769Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.769Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:19:57.776Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.776Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:19:57.794Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-06-28T03:19:57.794Z","pid":28708,"hostname":"NOT00783MT1580","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-28T03:19:57.794Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Trace file: "}
+{"level":30,"time":"2024-06-28T03:19:57.923Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:19:57.923Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method newContext"}
+{"level":30,"time":"2024-06-28T03:19:57.934Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-06-28T03:19:57.935Z","pid":28708,"hostname":"NOT00783MT1580","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-06-28T03:19:58.851Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Video path: undefined"}
+{"level":30,"time":"2024-06-28T03:19:58.851Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:20:02.083Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method newPage"}
+{"level":30,"time":"2024-06-28T03:20:02.089Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:02.089Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(text(),'Entre ou cadastre-se')] in page."}
+{"level":30,"time":"2024-06-28T03:20:04.581Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element xpath=//span[contains(text(),'Entre ou cadastre-se')] containing Entre ou cadastre-se"}
+{"level":30,"time":"2024-06-28T03:20:04.581Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:04.589Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:04.589Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=input[data-testid='search-form-input'] in page."}
+{"level":30,"time":"2024-06-28T03:20:05.087Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:05.092Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-06-28T03:20:05.092Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:20:05.204Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method fillText"}
+{"level":30,"time":"2024-06-28T03:20:06.212Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2024-06-28T03:20:06.212Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:20:06.252Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved attribute for element id=search-form-input containing Panela de Pressão Clock Original Prata - 4,5L"}
+{"level":30,"time":"2024-06-28T03:20:06.252Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2024-06-28T03:20:06.254Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method press"}
+{"level":30,"time":"2024-06-28T03:20:06.254Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=search-form-input in page."}
+{"level":30,"time":"2024-06-28T03:20:06.640Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method press"}
+{"level":30,"time":"2024-06-28T03:20:06.655Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-06-28T03:20:06.655Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=div[data-testid='product-card-desktop'] in page."}
+{"level":30,"time":"2024-06-28T03:20:06.655Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-06-28T03:20:06.928Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Found 1 elements."}
+{"level":30,"time":"2024-06-28T03:20:06.929Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getElements"}
+{"level":30,"time":"2024-06-28T03:20:06.939Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:06.939Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=div[data-testid='product-card-desktop'] >> nth=0 >> div.product-card__details-wrapper >> h3.product-card__title >> span in page."}
+{"level":30,"time":"2024-06-28T03:20:07.170Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element css=div[data-testid='product-card-desktop'] >> nth=0 >> div.product-card__details-wrapper >> h3.product-card__title >> span containing Panela de Pressão Clock Original Prata - 4,5L"}
+{"level":30,"time":"2024-06-28T03:20:07.170Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:10.176Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method click"}
+{"level":30,"time":"2024-06-28T03:20:10.176Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=div[data-testid='product-card-desktop'] >> nth=0 in page."}
+{"level":30,"time":"2024-06-28T03:20:11.061Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method click"}
+{"level":30,"time":"2024-06-28T03:20:11.064Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:11.065Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=button[data-testid='favorite-button'] >> svg >> path in page."}
+{"level":30,"time":"2024-06-28T03:20:15.227Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:15.231Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method click"}
+{"level":30,"time":"2024-06-28T03:20:15.231Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with id=buy-button in page."}
+{"level":30,"time":"2024-06-28T03:20:18.474Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method click"}
+{"level":30,"time":"2024-06-28T03:20:18.485Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:18.485Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=img[data-qa='cart-item-image'] in page."}
+{"level":30,"time":"2024-06-28T03:20:18.858Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-06-28T03:20:18.863Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:18.864Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=select[data-qa='item-quantity'] >> option >> nth=0 in page."}
+{"level":30,"time":"2024-06-28T03:20:18.895Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element css=select[data-qa='item-quantity'] >> option >> nth=0 containing 1"}
+{"level":30,"time":"2024-06-28T03:20:18.895Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:18.900Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:18.900Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=select[data-qa='item-quantity'] in page."}
+{"level":30,"time":"2024-06-28T03:20:18.905Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Locator count is 1"}
+{"level":30,"time":"2024-06-28T03:20:18.916Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:18.920Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getElements"}
+{"level":30,"time":"2024-06-28T03:20:18.920Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=li[data-testid='cart-item'] in page."}
+{"level":30,"time":"2024-06-28T03:20:18.921Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Wait element to reach attached state."}
+{"level":30,"time":"2024-06-28T03:20:18.938Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Found 1 elements."}
+{"level":30,"time":"2024-06-28T03:20:18.939Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getElements"}
+{"level":30,"time":"2024-06-28T03:20:18.943Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:18.944Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is enabled, find Locator with css=li[data-testid='cart-item'] >> nth=0 >> div >> nth=1 >> a in page."}
+{"level":30,"time":"2024-06-28T03:20:18.982Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Retrieved text for element css=li[data-testid='cart-item'] >> nth=0 >> div >> nth=1 >> a containing Panela de Pressão Clock Original Prata - 4,5L"}
+{"level":30,"time":"2024-06-28T03:20:18.982Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getText"}
+{"level":30,"time":"2024-06-28T03:20:18.986Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:18.986Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=li[data-testid='cart-item'] >> nth=0 >> div >> nth=0 in page."}
+{"level":30,"time":"2024-06-28T03:20:18.992Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Locator count is 1"}
+{"level":30,"time":"2024-06-28T03:20:19.003Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:19.006Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:19.006Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Strict mode is disabled, return Locator: css=li[data-testid='cart-item'] >> nth=0 >> div >> nth=1 in page."}
+{"level":30,"time":"2024-06-28T03:20:19.012Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Locator count is 1"}
+{"level":30,"time":"2024-06-28T03:20:19.027Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method highlightElements"}
+{"level":30,"time":"2024-06-28T03:20:19.032Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-06-28T03:20:19.032Z","pid":28708,"hostname":"NOT00783MT1580","Take screenshot with options: ":{"path":"C:\\apl-teste-espec-qualidade\\results\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":20000,"omitBackground":false}}
+{"level":30,"time":"2024-06-28T03:20:19.149Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-06-28T03:20:19.155Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.411Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.414Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.517Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.519Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:20:19.519Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=0e250955-2c49-4e63-9c67-98c5073d5bd6"}
+{"level":30,"time":"2024-06-28T03:20:19.519Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:20:19.537Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.571Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.578Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:20:19.579Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:20:19.583Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:20:19.584Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-06-28T03:20:19.588Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=0e250955-2c49-4e63-9c67-98c5073d5bd6"}
+{"level":30,"time":"2024-06-28T03:20:19.588Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:20:19.595Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.902Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:19.905Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active context"}
+{"level":30,"time":"2024-06-28T03:20:19.905Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changing current active page: page=0e250955-2c49-4e63-9c67-98c5073d5bd6"}
+{"level":30,"time":"2024-06-28T03:20:19.905Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Changed active page"}
+{"level":30,"time":"2024-06-28T03:20:19.912Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-06-28T03:20:19.932Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Removed page=433318fa-3abc-4b08-b9cf-cf9ce39e1cfe from context=4b17a454-52b8-495d-974d-928de90dcddf page stack"}
+{"level":30,"time":"2024-06-28T03:20:19.940Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-06-28T03:20:20.057Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:20.057Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-06-28T03:20:20.285Z","pid":28708,"hostname":"NOT00783MT1580","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-06-28T03:20:21.529Z","pid":28708,"hostname":"NOT00783MT1580","msg":"End of node method closeAllBrowsers"}
